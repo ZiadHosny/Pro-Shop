@@ -1,0 +1,20 @@
+{
+  "name": "pro-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiadHosny/Pro-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiadHosny/Pro-Shop/issues"
+  },
+  "homepage": "https://github.com/ZiadHosny/Pro-Shop#readme"
+}
