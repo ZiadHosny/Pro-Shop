@@ -1,16 +1,16 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-const Footer = () => {
+export const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <footer>
             <Container>
                 <Row>
-                    <Col className='text-center py-3'>Copyright &copy; ProShop</Col>
+                    <Col className='text-center py-3'>
+                        <p>ProShop &copy; {currentYear}</p>
+                    </Col>
                 </Row>
             </Container>
         </footer>
     )
 }
-
-export default Footer
