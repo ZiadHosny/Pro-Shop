@@ -10,9 +10,10 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/seeder",
-    "data:destroy": "node backend/seeder -d"
+    "data:destroy": "node backend/seeder -d",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "ziad hosny",
+  "author": "Ziad Hosny",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -23,19 +24,17 @@
   },
   "homepage": "https://github.com/ZiadHosny/Pro-Shop#readme",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.5",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^5.10.6",
-    "react-redux": "^8.1.2",
-    "redux": "^4.2.1"
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.20"
   }
