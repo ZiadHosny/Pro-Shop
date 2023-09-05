@@ -190,6 +190,7 @@ export {
     getUserProfile,
     updateUserProfile,
     getUserById,
+    updateUser,
     deleteUser,
-    getUsers
+    getUsers,
 }
