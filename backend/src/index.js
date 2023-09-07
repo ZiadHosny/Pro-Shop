@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from 'dotenv'
 import 'colors'
-import path, { dirname } from 'path';
+import path from 'path';
 import cookieParser from 'cookie-parser';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import { connectDB } from "./config/db.js";
