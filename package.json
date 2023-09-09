@@ -1,0 +1,24 @@
+{
+  "name": "pro-shop",
+  "version": "1.0.0",
+  "description": "> eCommerce platform built with the MERN stack & Redux.",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run server --prefix backend",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiadHosny/Pro-Shop.git"
+  },
+  "author": "Ziad Hosny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiadHosny/Pro-Shop/issues"
+  },
+  "homepage": "https://github.com/ZiadHosny/Pro-Shop#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

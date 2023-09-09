@@ -1,7 +1,6 @@
 {
   "name": "pro-shop-backend",
   "version": "1.0.0",
-  "description": "MERN shopping cart app",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -12,14 +11,6 @@
   },
   "author": "Ziad Hosny",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ZiadHosny/Pro-Shop.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ZiadHosny/Pro-Shop/issues"
-  },
-  "homepage": "https://github.com/ZiadHosny/Pro-Shop#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
