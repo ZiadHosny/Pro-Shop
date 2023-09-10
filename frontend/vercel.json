@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/api",
+            "destination": "https://pro-shop-backend-z.vercel.app"
+        }
+    ]
+}
