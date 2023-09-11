@@ -9,12 +9,24 @@
                     "backend/src/**"
                 ]
             }
+        },
+        {
+            "src": "./frontend/build/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
             "dest": "backend/src/index.js"
+        },
+        {
+            "src": "/",
+            "dest": "frontend/build/index.html"
+        },
+        {
+            "src": "/(.+)",
+            "dest": "frontend/build/$1"
         }
     ]
 }
