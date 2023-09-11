@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 
 const storage = multer.diskStorage({
   destination(req, file, cb) {
-    cb(null, `${__dirname}/uploads/`);
+    cb(null, path.join(__dirname, '/uploads/'))
   },
   filename(req, file, cb) {
     cb(
@@ -35,6 +35,7 @@ const upload = multer({ storage, fileFilter });
 const uploadSingleImage = upload.single('image');
 
 router.post('/', (req, res) => {
+  console.log(__dirname, 'ssssssssssssssssssssssss')
   uploadSingleImage(req, res, function (err) {
     if (err) {
       res.status(400).send({ message: err.message });
