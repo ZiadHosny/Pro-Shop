@@ -7,7 +7,6 @@ node_modules
 
 #Frontend
 frontend/coverage
-frontend/build
 
 #Backend
 /backend/src/data

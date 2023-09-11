@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "bootstrap": "^5.2.3",
+    "pro-shop": "file:..",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
@@ -19,8 +20,8 @@
     "react-redux": "^8.0.5",
     "react-router-bootstrap": "^0.26.2",
     "react-router-dom": "^6.7.0",
-    "react-toastify": "^9.1.3",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
