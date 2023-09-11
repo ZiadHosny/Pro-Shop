@@ -30,6 +30,10 @@
         },
         {
             "src": "/(.+)",
+            "dest": "uploads/$1"
+        },
+        {
+            "src": "/(.+)",
             "dest": "frontend/build/$1"
         }
     ]
