@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "> eCommerce platform built with the MERN stack & Redux.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "server": "npm run server --prefix backend",
+    "start": "node backend/src/index.js",
+    "server": "nodemon backend/src/index.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "data:import": "node src/seeder",
+    "data:destroy": "node src/seeder -d"
   },
   "repository": {
     "type": "git",
@@ -18,7 +23,20 @@
     "url": "https://github.com/ZiadHosny/Pro-Shop/issues"
   },
   "homepage": "https://github.com/ZiadHosny/Pro-Shop#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^5.10.6",
+    "multer": "^1.4.5-lts.1"
+  },
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "@types/express": "^4.17.17",
+    "nodemon": "^2.0.20"
   }
 }
